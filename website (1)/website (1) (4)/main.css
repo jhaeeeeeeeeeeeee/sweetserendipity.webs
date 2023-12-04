@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body {
+    overflow: hidden;
+}
+.container {
+    width: 100%;
+    min-height: 100vh;
+}
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 80px;
+    line-height: 80px;
+    z-index: 111;
+    background-color: black;
+}
+#logo_img {
+    width: 1.1em;
+    height: 1.1em;
+}
+.logo {
+    display: flex;
+    font-size: 40px;
+    font-weight: 800;
+    color: #3d535f;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+b {
+    font-size: 70px;
+    color: #710193;
+}
+#the_about_panel {
+    color: #3d535f;
+}
+.navItems {
+    display: flex;
+}
+.navItems li {
+    list-style: none;
+    margin: 0 15px;
+}
+.navItems, li, a {
+    font-size: 25px;
+    color: #3d535f;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.navItems, li:hover a,
+.links, a:hover {
+    color: #7f00ff;
+}
+.link a {
+    font-size: 34px;
+    margin: 7px;
+}
+#the_members_panel {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 80px;
+    left: 0;
+    background-color: #0d0d0d;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+    display: flex;
+    opacity: 0.9;
+}
+
+#the_about_panel {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 80px;
+    left: 0;
+    background-color: #0d0d0d;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+    display: flex;
+    opacity: 0.9;
+}
+#closebtn:hover {
+    color: #710193;
+}
+img {
+    height: 1.2em;
+    width: 1.2em;
+}
+.members {
+    color: #710193;
+}
+a, span {
+    cursor: pointer;
+}
+.p {
+    color: #2c041c;
+}
+.wrapper {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    overflow: hidden;
+    background-image: linear-gradient(to right, #b393d4, #2c041c);
+}
+.wrapper::before {
+    position: absolute;
+    content: '';
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    left: -12%;
+    top: 34%;
+    background-image: linear-gradient(45deg,#311432,#7a4988);
+    animation: object1 6s linear infinite;
+}
+.wrapper::after {
+    position: absolute;
+    content: '';
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    left: 40%;
+    top: 20%;
+    background-image: linear-gradient(45deg,#311432,#7a4988);
+    animation: object2 6s linear infinite;
+}
+@keyframes object1 {
+    50%{
+        left: -13%;
+        top: 41%;
+    }
+}
+@keyframes object2 {
+    50%{
+        left: 40%;
+        top: 31%;
+    }
+}
+.cols {
+    width: 50%;
+}
+.cols0 {
+    z-index: 1;
+    padding-bottom: 7em;
+}
+.cols1 {
+    padding-bottom: 7em;
+}
+.topline {
+    display: block;
+    position: relative;
+    font-size: 27px;
+    letter-spacing: 2px;
+    color: #290916;
+}
+.topline:after {
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 45px;
+    bottom: 10px;
+    background-color: #710193;
+}
+h1 {
+    display: block;
+    font-size: 3em;
+    font-weight: 900;
+    color: #290916;
+}
+.diffcolortxt {
+    color: #710193;
+    text-transform: capitalize;
+}
+p {
+    display: block;
+    width: 90%;
+    font-size: 1.2em;
+    color: #3d535f;
+}
+.btns {
+    width: 100%;
+    position: relative;
+    left: 40px;
+}
+button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 400;
+    color: #fff;
+    background-color: #3d535f;
+    padding: 8px 14px;
+    margin: 40px 5px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    box-shadow: 0 15px 10px rgba(0,0,0,0.4);
+
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+button:hover {
+    transform: translateY(-10px);
+    background-color: #7f00ff;
+}
+.imgbox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}

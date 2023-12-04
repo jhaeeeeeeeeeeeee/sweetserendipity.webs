@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="main.css">
+    <title>Your Channel Name</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">Group 6<b>.</b></div>
+            <ul class="navItems">
+                <li><a href="#home" onclick="closeAbout(),closeMembers()">Home</a></li>
+                <li><a href="javascript:void(0)" id="openbtnabout" onclick="openAbout(),closeMembers()">About</a>
+                    <div id="the_about_panel">
+                        <p>Welcome to Sweet Serendipity, where every moment is a delightful surprise waiting to unfold. Embrace the serendipitous journey that lies ahead as we invite you to immerse yourself in a world of sweetness and joy.</p>
+                        <span id="closebtn" onclick="closeAbout()">&times;</span>
+                    </div></li>
+                <li><a href="javascript:void(0)" id="openbtnclass" onclick="openMembers(),closeAbout()">Members</a>
+                    <div id="the_members_panel">
+                    <ul id="members">
+                        <li> Members of Group 6:</li>
+                        <li>  Servito, Jhaecka Alexa Y</li>
+                        <li>  Martinez, Laryzsa Bernyce Love</li>
+                        <li>  Santos, Cayden Ernest Jae</li>
+                        <li>  Atenta, Chryslen Lance</li>
+                        <li>  De los Reyes, Jack Lawrence</li>
+                    </ul><br>
+                        <span id="closebtn" onclick="closeMembers()">&times;</span>
+                    </div> </li>
+                </li>
+                <li><a href="../website/shop.html">Shop</a></li>
+            </ul>
+
+    <div class="link">
+        <a href="https://www.youtube.com/channel/UCVW7z86YJcU2C_unHk3Qp5w" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="#"><img src="../website/image/logo.png" id="logo_img"></a>
+    </div>
+
+    </nav> 
+
+        <div class="wrapper">
+            <div class="cols cols0">
+                <span class="topline">Konnichiwa</span>
+                <h1>Sweet <span id="multiText" class="diffcolortxt">Serendipity</span></h1>
+                <p class="p">Here you can embark on the sweetest journey that can make that SWEET TOOTH happy. Enjoy the chocolately, nougaty, creamy, fruity delectables that our shopee has to offer</p>
+                <div class="btns">
+                    <button>hello</button>
+                    <button>humans</button>
+                </div>
+            </div>
+            <div class="cols cols1">
+                <video width="640" height="360" controls autoplay>
+                    <source src="video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
